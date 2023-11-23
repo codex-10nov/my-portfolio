@@ -1,5 +1,5 @@
 .home {
-    background-image: url("../../resources/wallpaper.jpg");
+    background-image: url("../assets/wallpaper.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center; 
-    height: 50vh;
+    height: 55vh;
     flex-direction: column;
 }
 

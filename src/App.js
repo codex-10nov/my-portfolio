@@ -5,6 +5,7 @@ import './App.css';
 
 // Components
 import Home from './Components/Home';
+import AboutMe from './Components/AboutMe';
 import Error from './Components/Error';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* <Route path="/about-me" element={<AboutMe />} /> */}
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>

@@ -9,7 +9,7 @@ function NavBar() {
       switch(routes) {
         case "home":  navigate('/');
                       break;
-        case "about": navigate('/about');
+        case "about": navigate('/about-me');
                       break;
         case "portfolio": navigate('/portfolio');
                       break;
