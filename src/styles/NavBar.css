@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: right; 
+}
+
+.navbar > .items {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: right; 
+    width: 100%;
+}
+/* App.css */
+
+/* Button styling with underline effect */
+.navbar > .items > button {
+    margin: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    color: #f6f6f6;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative; /* Required for the absolute positioning of ::before pseudo-element */
+  }
+  
+  /* Underline effect */
+  .navbar > .items > button::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #f6f6f6; /* Adjust the color as needed */
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -6px; /* Adjust the distance from the text as needed */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Underline animation on hover */
+  .navbar > .items > button:hover::before {
+    width: 80%;
+  }
+  
